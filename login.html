@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,300&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/7152/7152364.png">
+    <script src="https://kit.fontawesome.com/d7aaf20f1c.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="login-body">
+   
+    <form class="login-form">
+      <h1>Welcome to<span class="appname">TRAFFISSUE</span> </h1>
+      <p>Let's get you signed in and solve traffic challenge</p>
+      <input type="text" placeholder="Email or phone" id="username" required />
+      <input type="password" placeholder="Password" id="password" required />
+      <a href="Register.html">Forgot Password ?</a>
+      <!-- <p class="forgot-password">Forgot Password ?</p> -->
+     
+      <p> <span> <input type="checkbox" class="checkbox" /></span>
+        By clicking Agree & Join or Continue, you agree to the TRAFFISSUE
+       User Agreement, Privacy Policy, and Cookie Policy.
+      </p>
+      <button type="submit" class="sign-in-btn">Sign in</button>
+      <div class="separator">
+        <span>or</span>
+      </div>
+      <button class="btn-register"><a href="Register.html"><i class="fa-brands fa-google"></i></a>Continue as google</button>
+      <button class="btn-register">
+        <a href="Register.html"><i class="fa-brands fa-microsoft"></i></a> Continue as Microsoft
+      </button>
+      <p class="p-buss">
+        New to traffic controller? <a href="register.html">Join now</a>
+      </p>
+    </form>
+   
+    <script>
+      document
+        .querySelector(".login-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Get user input
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+
+          // Get stored user data
+          var user = localStorage.getItem("user");
+
+          if (user) {
+            var parsedUser = JSON.parse(user);
+
+            // Validate username and password
+            if (parsedUser.username === username && parsedUser.password === password) {
+              window.location.href = "index.html";
+            } else if (parsedUser.username !== username) {
+              alert("Incorrect username");
+            } else {
+              alert("Incorrect password");
+            }
+          } else {
+            alert("User not found! Redirecting to registration.");
+            window.location.href = "register.html";
+          }
+        });
+    </script>
+  </body>
+
+</html>

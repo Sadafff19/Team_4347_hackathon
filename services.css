@@ -1,0 +1,610 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.logo{
+    margin: 5px;
+    margin-left: 40px;
+}
+.appname{
+    font-size:25px;
+    font-weight: bold;
+    width: 170px;
+    font-family: cursive;
+    font-style: oblique;
+    background: linear-gradient(to right,#362068, #6b47c0, #c856df);
+    color: white;
+}
+.navbar{
+    display: flex;
+    width: auto;
+    height: 70px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background-color: black;
+    font-family: cursive;
+    box-shadow: rgb(109, 109, 109) 0px 3px 8px;
+    position:sticky;
+}
+.delivery,.assist,.pn,.navservice{
+    width:auto;
+    height:30px;
+    border:none;
+    font-size:20px;
+    background-color:transparent;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    padding: 3px;
+    color:rgb(209, 209, 209);
+    margin-top:23px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 2px rgb(53, 53, 53);
+}
+.delivery:hover,.assist:hover,.navservice:hover{
+    color: rgb(255, 255, 255);
+}
+.navservice{
+    margin-left:30%;
+}
+.pn:hover{
+    color: white;
+}
+.login{
+    width: 100px;;
+    height:40px;
+    font-size: 18px;
+    border:none;
+    margin: 17px;
+    background-color:rgb(206, 34, 34);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: rgb(226, 226, 226);
+    border-radius:10px;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+}
+.login:hover,.user:hover{
+    color: rgb(255, 255, 255);
+    background-color:rgb(255, 37, 37);
+}
+.user{
+    width:40px;
+    height:40px;
+    margin-top: 15px;
+    margin-left:0px;
+    color:rgb(39, 39, 39);
+    background-color:rgb(221, 221, 221);
+    border: none;
+    border-radius: 50%;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+}
+.user-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .user-icon {
+    background-color: rgb(58, 58, 58);
+    color: rgb(226, 226, 226);
+    font-size: 16px;
+    margin-top: 17px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .user-icon:hover {
+    background-color: rgb(77, 77, 77);
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 10;
+    width: 150px;
+  }
+  
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+  }
+.service{
+    display: flex;
+    height:200px;
+    width:auto;
+    background-color: #c2e1fa;
+    border:1px solid transparent;
+}
+.service img:nth-child(1){
+    margin-left: 5%;
+    padding-top: 2%;
+}
+.service img:nth-child(2){
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.service img:nth-child(3){
+    margin-left: 4%;
+    margin-top: 5%;
+}
+.servicebar{
+    width:550px;
+    height:40px;
+    margin-top: 7%;
+    border:none;
+    text-align: center;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sb{
+    width:70px;
+    height:40px;
+    margin-top: 7%;
+    margin-left: 2%;
+    border:none;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.infobox{
+    width:auto;
+    height:auto;
+    border:1px solid transparent;
+    margin-top: 100px;
+}
+.inb1{
+    width:auto;
+    height: 100px;
+    border: 1px solid transparent;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-size: 40px;
+    text-align: center;
+    color: rgb(107, 44, 122);
+}
+.servicename{
+    width:auto;
+    height:60px;
+    margin: 10px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid transparent;
+    font-weight: 600;
+    display: flex;
+    font-size: 30px;
+}
+.servicename p{
+    padding-left: 5%;
+}
+.servicename img{
+    margin: 10px;
+}
+.inb2{
+    width:auto;
+    height:auto;
+    display: flex;
+    border: 1px solid transparent;
+}
+.curvy{
+    width:450px;
+    height:450px;
+    clip-path:polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+    overflow: hidden;
+    margin-left:7%;
+    margin-top: 4%;
+    float: left;
+}
+.curvy img{
+    object-fit: cover
+}
+.innbox{
+    width: 700px;;
+    height: 500px;
+    margin: 10px;
+    border: 1px solid black;
+    background-color: black;
+    color:white;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+    border-radius: 15%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    padding-top: 3%;
+} 
+.innbox p{
+    padding-left: 3%;
+}
+.delbtn{
+    width: auto;
+    height:40px;
+    font-size: 18px;
+    border:none;
+    background-color:rgb(226, 226, 226);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    color: rgb(58, 58, 58);
+    padding: 5px 10px;
+    border-radius:10px;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+}
+.delbtn{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.delbtn:hover{
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+}  
+footer {
+    background-color: #082135;
+    font-family: Lato, "Noto Sans", sans-serif;
+    padding: 40px 50px;
+}
+footer > div:nth-child(1) {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 850px;   
+}
+footer p {
+    margin-top: 10px;
+}
+#box2 {
+    display: flex;
+    font-size: 12px;
+}
+#box2 > div {
+    padding-right: 20px;
+}
+#paras {
+    font-size: 20px;
+    color: #8295BA;
+    max-width: 370px;
+    min-width: 200px;
+    padding-right: 30px;
+    margin-top: 0;
+}
+#box > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+#paras > p {
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+span {
+    color: white;
+}
+span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+#about, #contact, #courses, #apps {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#about-head {
+    color: white;
+    padding: 0px;
+    font-size: 12px;
+}
+.head3 {
+    color: #8295BA;
+    margin-top: 2px;
+    font-size: 12px;
+    padding: 0px;
+}
+footer p:hover {
+    text-decoration: underline;
+}
+#about + div {
+    display: flex;
+    flex-direction: column;   
+}
+#about + div > div:nth-child(1) {
+    padding-bottom: 40px;
+}
+.store {
+    width: 100px;
+    margin-top: 15px;
+}
+.aero {
+    background-color: #0b2149;
+    width: 18px;
+    height: 15px;
+    border-radius: 2px;
+    padding-top: 0px;
+    margin-top: 10px;
+    padding-left: 2px;
+}
+#paras img {
+    width: 15px;
+    margin-top: 3px;
+}
+.inline {
+    display: flex;
+}
+.inline p {
+    padding-right: 4px;
+}
+
+.lang-ctry {
+    color: #8295BA;
+    font-size: 12px;
+}
+#language {
+    margin-left: 2px;
+    padding: 5px;
+    background-color: #0b2149;
+    border: none;
+    color: white;
+    width: 80px;
+    font-size: 12px;
+}
+#language:focus {
+    background-color: white;
+    color: black;
+    border: none;
+}
+#language:hover {
+    text-decoration: underline;
+}
+.flag {
+    width: 18px;
+    height: 10px;
+    margin-left: 15px;
+    margin-right: 2px;
+}
+.contry {
+    color: white;
+    font-size: 12px;
+    display: inline;
+}
+.contry:hover {
+    text-decoration: none;
+}
+#lang-contry {
+    margin-top: 5px;
+}
+#copy-right {
+    margin-top: 20px;
+}
+.terms {
+    color: white;
+    font-size: 12px;
+    display: inline;
+    margin-left: 20px;
+}
+.social-med {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 2px;
+    border-radius: 5px;
+}
+footer > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+#social-media-icons {
+    margin-top: 30px;
+}
+.supporters-section {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 100px;
+}
+
+.supporters-heading {
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.supporters-logos {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+.supporters-logos img {
+    width: 120px;
+    height: auto;
+}
+h4 {
+    font-size: 9px;
+    font-style: oblique;
+}
+.aibox{
+    width: auto;
+    height: 600px;
+    border:1px solid transparent;
+    margin-top: 100px;
+    background-color: #cbffcd;
+    margin-bottom: 100px;
+    display: flex;
+} 
+.chatbot-container {
+    width: 400px;
+    height: 500px;
+    background-color: #ffffff;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+    border-radius: 8px;
+    display: flex;
+    margin-left: 10%;
+    margin-top: 4%;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.chatbot-header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.chatbot-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 75%;
+    line-height: 1.5;
+}
+
+.message.user {
+    background-color: #e1ffc7;
+    align-self: flex-end;
+}
+
+.message.bot {
+    background-color: #d1d1d1;
+    align-self: flex-start;
+}
+
+.chatbot-input {
+    display: flex;
+    border-top: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+}
+p>a{
+    text-decoration: none;
+    color: white;
+}
+.chatbot-input button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chatbot-input button:hover {
+    background-color: #2d8d32;
+}
+.aiimg img:nth-child(1){
+    margin-left: 17%;
+}
+.aiimg img:nth-child(2){
+    margin-left: 50%;
+}
+#nav2 {
+    display: flex;
+    gap: 10px;
+  }
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    #nav2>a{
+      margin-left: 50px;
+    }
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .user-menu {
+      display: none;
+    }
+  }
+  .menu-icon {
+    display: none;
+  
+  }
+  
+  #nav2.show {
+    display: flex;
+  }
+  
+  
+  @media (max-width: 480px) {
+    
+    iframe {
+      width: 90%;
+      height: 400px;
+    }
+    .buttons>img{
+      width: 100%;
+      height: 250px;
+      margin-left: -10px;
+    }
+    .menu-icon{
+      display: block;
+      color: white;
+      font-size: 30px;
+      margin-right: 10px;
+      margin-top: -60px;
+    
+      text-align: end;
+    }
+    #assist1>img{
+      width: 100%;
+    }
+    .navbar{
+      width: 100%;
+    }
+    #nav2 {
+      display: none;
+      flex-direction: column;
+      background:linear-gradient(#c7aeff,rgb(228, 255, 253),rgb(255, 255, 255),#aca3ff,rgb(155, 155, 155)); /* Optional: background for dropdown */
+      position: absolute;
+      top: 80px; 
+      right: 0;
+      border-radius: 20px;
+      width: 50%; 
+      z-index: 800; 
+    }
+    #nav2 a {
+      padding: 10px;
+      text-align: center;
+    }
+    .appname{
+      margin-left: 90px;
+     margin-top: -50px;
+    }
+    .logo{
+      text-align: start;
+      margin-left: -270px;
+    }
+    #foot1>div{
+        flex-wrap: wrap;
+      }
+   
+  }

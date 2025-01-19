@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAFFISSUE |contactUs</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/7152/7152364.png">
+    <script src="https://kit.fontawesome.com/d7aaf20f1c.js" crossorigin="anonymous"></script>
+
+</head>
+<body class = "body2">
+    <div class="navbar">
+        <a href="./index.html">
+          <img class="logo" src="https://cdn-icons-png.flaticon.com/256/7152/7152364.png" 
+        alt="logo" height="60px" width="60px">
+        </a>
+        <p class="appname">TRAFFISSUE</p>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <a href="./services.html" class="navservice">Service</a>
+       <div id="nav2">
+       
+        <a href="./services.html" class="delivery">Delivery</a>
+        <a href="./services.html" class="assist">Assistance</a>
+        <a href="./index (2).html" class="pn">Ride</a>
+        <a href="index (2).html" class="pn">Route</a>
+        <a href="./login.html"> <button class="login">login</button></a>
+       </div>
+      
+        <div class="user-menu">
+          <button class="user-icon">
+            <i class="fa-solid fa-user"></i>
+          </button>
+          <div class="dropdown-menu">
+            <a href="index.html">Profile</a>
+            <a href="/Register.html">Sign Out</a>
+            <a href="./login.html">Sign In</a>
+            <a href="#">Settings</a> 
+          </div>
+        </div>
+    </div>
+    <!-- Contact Section -->
+    <h1 class ="head">Contact Me</h1>
+    <div class="cont">
+        <div class="contact">
+            <a href="mailto:ankit2914978@gmail.com">
+                <i class="fa-solid fa-envelope"></i> <p>ankit2914978@gmail.com</p>
+            </a>
+            <a href="tel:+918707538123">
+                <i class="fa-solid fa-phone"></i> <p>8707538123</p>
+            </a>
+            <a href="https://www.linkedin.com/in/ankit-kumar-377849254" target="_blank">
+                <i class="fa-brands fa-linkedin"></i> <p>LinkedIn</p>
+            </a>
+            <a href="https://github.com/Ankit1141192" target="_blank">
+                <i class="fa-brands fa-github"></i> <p>GitHub: Ankit1141192</p>
+            </a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet" id="contactForm">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <input  type="number" name="Number" placeholder="Number" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" id="submit1"> submit</button>
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxMsp13pDnKrWa6ZPzZ16IL2iz1ybKEyD_6luiMlaIFgS5wkuqIbb-vT07Dqc6KssSd/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg  = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },2000);
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+<script src="./script.js"></script>

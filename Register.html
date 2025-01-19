@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://kit.fontawesome.com/d7aaf20f1c.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,300&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/256/7152/7152364.png">
+  </head>
+  <body class="register-body">
+    <!-- <div class="heading">
+      <h1><span><i class="fa-solid fa-car"></i></span>~Solve driving challenges—join us today!</h1>
+    </div> -->
+    <form class="register-form">
+      <h1>Welcome to<span class="appname">TRAFFISSUE</span> </h1>
+      <!-- <label for="email">Email or phone number</label> -->
+      <input type="text" id="username" required placeholder="Email or phone number" />
+      <!-- <label for="password">Password</label> -->
+      <input type="password" id="password" required  placeholder="Password"/>
+      <a href="login.html">Remember</a>
+      
+      <p><span><input type="checkbox" class="checkbox" /></span>
+        By clicking Agree & Join or Continue, you agree to the TRAFFISSUE
+        User Agreement, Private Policy,and , Privacy Policy, and
+        Cookie Policy.
+      </p>
+      <button class="btn">Agree & Join</button>
+      <div class="separator">
+        <span>or</span>
+      </div>
+      <button class="btn-register"><a href="Register.html"><i class="fa-brands fa-google"></i></a>Continue as google</button>
+      <button class="btn-register">
+        <a href="Register.html"><i class="fa-brands fa-microsoft"></i></a> Continue as Microsoft
+      </button>
+      <p class="confirm">
+        Already on traffic controller? <a href="login.html">Sign in</a>
+      </p>
+    </form>
+    <script>
+      document
+        .querySelector(".register-form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          let username = document.getElementById("username").value;
+          let password = document.getElementById("password").value;
+
+          const user = {
+            username: username,
+            password: password
+          };
+          console.log(user);
+
+          localStorage.setItem("user", JSON.stringify(user));
+          alert("Registration Successful ! Please Login");
+          window.location.href = "login.html";
+        });
+
+      console.log("test");
+    </script>
+  </body>
+ 
+</html>
